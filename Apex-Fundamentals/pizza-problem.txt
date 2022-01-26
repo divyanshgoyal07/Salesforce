@@ -38,3 +38,19 @@ Integer joeyHasToPay = numberOfSlices == 1 ? ONLY_ONE_SLICE*numberOfSlices :
 		MORE_THAN_THREE_SLICES*numberOfSlices);
 
 System.debug('Joey has to pay - '+joeyHasToPay);
+
+---------------------------------------------------------------------
+Shorter Solution
+
+
+Integer jslices = 4;
+Integer cslices = 1;
+Integer rslices = 3;
+Integer price;
+price = (jslices == 1 ) ? 8 : (jslices > 3) ? 6 : 7;
+System.debug('Joey has to pay '+price*jslices);
+price = (cslices == 1 ) ? 8 : (cslices > 3) ? 6 : 7;
+System.debug('Chandler has to pay '+price*cslices);
+price = (rslices == 1 ) ? 8 : (rslices > 3) ? 6 : 7;
+System.debug('Ross has to pay '+price*rslices);
+
