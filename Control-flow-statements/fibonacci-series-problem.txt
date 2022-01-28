@@ -1,0 +1,14 @@
+Integer num = 1;
+Integer n1=0;
+Integer n2=1;
+System.debug(n1);
+System.debug(n2);
+while(num<=18){
+    Integer fs;
+    fs=n1+n2;
+    System.debug(fs);
+    n1=n2;
+    n2=fs;
+    num++;
+}
+   
